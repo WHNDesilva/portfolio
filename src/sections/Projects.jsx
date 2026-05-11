@@ -221,7 +221,7 @@ const projects = [
     tags: ["React", "Tailwind CSS", "Vite"],
     category: "frontend",
     status: "ongoing",
-    github: "https://hiruni-desilva-portfolio.netlify.app/",
+    github: "https://github.com/WHNDesilva/portfolio",
     slides: [
       { image: "/projects/portfolio/overview.png",   caption: "Project overview" },
       { image: "/projects/portfolio/herosection.png",   caption: "Hero section — animated dark-themed landing page with glowing accents." },
