@@ -92,6 +92,7 @@ export const Contact = () => {
           name: formData.name,
           email: formData.email,
           message: formData.message,
+           time: new Date().toLocaleString(),
         },
         publicKey
       );
@@ -105,8 +106,7 @@ export const Contact = () => {
       console.error("EmailJS error:", err);
       setSubmitStatus({
         type: "error",
-        message:
-          err.text || "Failed to send message. Please try again later.",
+       message: err.message || err.text || "Failed to send message. Please try again later.",
       });
     } finally {
       setIsLoading(false);
